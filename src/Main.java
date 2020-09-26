@@ -5,10 +5,13 @@ public class Main {
 
         CreditPaymentService creditPaymentService = new CreditPaymentService();
 
-        System.out.println(creditPaymentService.calculate(sum, 1, percent));
+        int oneYear = 1;
+        System.out.println(creditPaymentService.calculate(sum, oneYear, percent));
 
-        System.out.println(creditPaymentService.calculate(sum, 2, percent));
+        int twoYears = 2;
+        System.out.println(creditPaymentService.calculate(sum, twoYears, percent));
 
-        System.out.println(creditPaymentService.calculate(sum, 3, percent));
+        int threeYears = 3;
+        System.out.println(creditPaymentService.calculate(sum, threeYears, percent));
     }
 }
